@@ -5,3 +5,6 @@ These are just some applications I tossed together during my Electrical Engineer
 
 Ex: ELCUNITS program<br>
 ![](example.png)
+
+# Editing?
+Use TI Connect CE to edit the files and test on a TI calculator.
