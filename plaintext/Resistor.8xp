@@ -118,10 +118,10 @@ Goto M8
 Lbl DC
 2→D
 Goto M8
-Lbl DE
+Lbl DD
 5→D
 Goto M8
-Lbl DF
+Lbl DE
 10→D
 Goto M8
 
@@ -151,4 +151,11 @@ Goto ZZ
 Lbl ZZ
 (10*A+B)*C→O
 toString(O)+" OHMS +- "+toString(D)+"%"→Str1
+Goto ZO
+
+Lbl ZY
+toString(E)+" % Failure Rate"→Str1
+Goto ZO
+
+Lbl ZO
 Str1
