@@ -150,7 +150,7 @@ Goto ZY
 
 Lbl ZZ
 (10*A+B)*C→O
-toString(O)+" OHMS +- "+toString(D)+"%"→Str1
+toString(O)+" Ohms +- "+toString(D)+"%"→Str1
 Goto ZO
 
 Lbl ZY
