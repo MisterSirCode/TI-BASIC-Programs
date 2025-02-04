@@ -1,6 +1,6 @@
 Menu("First Band","Quit",QQ,"Black",AA,"Brown",AB,"RED",AC,"Orange",AD,"Yellow",AE,"Green",AF,"Blue",AG,"More >",M2)
 Lbl M2
-Menu("First Band (2)","Quit",QQ,"Violet",AH,"Gray",AI,"White",AJ)
+Menu("First Band (2)","Quit",QQ,"Violet",AH,"Gray",AI,"White",AJ,"Need Failure Rate",M8)
 
 Lbl QQ
 Stop
@@ -111,19 +111,19 @@ Menu("Tolerance","Quit",QQ,"Black",DA,"Brown",DB,"Red",DC,"Gold",DD,"Silver",DE)
 
 Lbl DA
 20→D
-Goto M8
+Goto ZZ
 Lbl DB
 1→D
-Goto M8
+Goto ZZ
 Lbl DC
 2→D
-Goto M8
+Goto ZZ
 Lbl DD
 5→D
-Goto M8
+Goto ZZ
 Lbl DE
 10→D
-Goto M8
+Goto ZZ
 
 Lbl M8
 0→E
@@ -131,22 +131,22 @@ Menu("Failure Rate","Quit",QQ,"Blank / None",ZZ,"Black",EA,"Brown",EB,"Red",EC,"
 
 Lbl EA
 5→E
-Goto ZZ
+Goto ZY
 Lbl EB
 1→E
-Goto ZZ
+Goto ZY
 Lbl EC
 0.1→E
-Goto ZZ
+Goto ZY
 Lbl ED
 0.01→E
-Goto ZZ
+Goto ZY
 Lbl EE
 0.001→E
-Goto ZZ
+Goto ZY
 Lbl EF
 0.0001→E
-Goto ZZ
+Goto ZY
 
 Lbl ZZ
 (10*A+B)*C→O
