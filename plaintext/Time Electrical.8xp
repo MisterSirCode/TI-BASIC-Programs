@@ -4,7 +4,7 @@ Lbl QQ
 Stop
 
 Lbl IC
-Menu("Select Type","Quit",QQ,"IC at RMS",IR,"IC at Time",IT)
+Menu("Select Type","Quit",QQ,"IC at RMS",IR,"IC at VP",IP,"IC at Time",IT)
 
 Lbl IR
 ClrHome
@@ -21,6 +21,13 @@ Input "Freq: ",F
 Input "Time: ",T
 Input "Cap: ",C
 P*sin(360*F*T)→V
+Goto II
+
+Lbl IP
+Input "V Peak: ",V
+Input "Freq: ",F
+Input "Cap: ",C
+(90/360)*(1/F)→T
 Goto II
 
 Lbl II
