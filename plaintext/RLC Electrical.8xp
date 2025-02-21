@@ -35,12 +35,12 @@ Input "Freq: ",F
 If S=1:Then
 √(R^2+X^2)→Z
 cos(R/Z)→A
-"θz:"+toString(round(A*1000)/1000)+" Z:"+toString(Z)→Str1
+"θz:"+toString(round(A,2))+" Z:"+toString(round(Z,3))→Str1
 Else
 √((R)^2+(X)^2)→Z
 Input "Voltage: ",V
 ­cos((V/R)/(V/Z))→A
-"θi:"+toString(round(A*1000)/1000)+" Z:"+toString(Z)→Str1
+"θi:"+toString(round(A,2))+" Z:"+toString(round(Z,3))→Str1
 End
 Goto EE
 
@@ -53,12 +53,12 @@ Input "Freq: ",F
 If S=1:Then
 √(R^2+X^2)→Z
 cos(R/Z)→A
-"θz:"+toString(round(A*1000)/1000)+" Z:"+toString(Z)→Str1
+"θz:"+toString(round(A,2))+" Z:"+toString(round(Z,3))→Str1
 Else
 √((R)^2+(X)^2)→Z
 Input "Voltage: ",V
 ­cos((V/R)/(V/Z))→A
-"θi:"+toString(round(A*1000)/1000)+" Z:"+toString(Z)→Str1
+"θi:"+toString(round(A,2))+" Z:"+toString(round(Z,3))→Str1
 End
 Goto EE
 
