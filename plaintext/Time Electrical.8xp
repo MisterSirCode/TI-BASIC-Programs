@@ -1,32 +1,32 @@
-Menu("Select Type","Quit",QQ,"RL Circuit",RL,"RC Circuit",RC,"V or I at TC",AC,"Instant IC",IC)
+Menu("Select Type","Quit",QQ,"RL Circuit",RL,"RC Circuit",RC,"V or I at Constant",AC,"Instantaneous",IC)
 
 Lbl QQ
 Stop
 
 Lbl IC
-Menu("Select Type","Quit",QQ,"IC at RMS",IR,"IC at VP",IP,"IC at Time",IT)
+Menu("Select Type","Quit",QQ,"ic/v at I/Vrms",IR,"ic/v at I/Vp",IP,"ic/v at Time",IT)
 
 Lbl IR
 ClrHome
-Input "V RMS: ",V
+Input "RMS: ",V
 Input "Freq: ",F
-Input "Cap: ",C
+Input "Cap/Ind: ",C
 (45/360)*(1/F)→T
 Goto II
 
 Lbl IT
 ClrHome
-Input "V Peak: ",P
+Input "Peak: ",P
 Input "Freq: ",F
 Input "Time: ",T
-Input "Cap: ",C
+Input "Cap/Ind: ",C
 P*sin(360*F*T)→V
 Goto II
 
 Lbl IP
-Input "V Peak: ",V
+Input "Peak: ",V
 Input "Freq: ",F
-Input "Cap: ",C
+Input "Cap/Ind: ",C
 (90/360)*(1/F)→T
 Goto II
 
