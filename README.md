@@ -20,3 +20,7 @@ If you need to convert the plaintext script, copy and paste it's contents into t
 - TIMEELEC (Time Electrical)
     - A bunch of useful time-based maths for RC / RL circuits, and Time-Constants in-general.
     - (Im using the general formulas here, so you have to define the start / end current and voltage manually)
+- RLCELEC (RLC Electrical)
+    - Dedicated program for RL / RC / RLC circuits
+- AMPS (Amplifiers)
+    - Bunch of stuff related to Filtering and Amplifying signals
